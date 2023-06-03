@@ -1,0 +1,14 @@
+<body>
+  <div class="container">
+    <h1 class="title"> {{Titulorecursivo}}</h1>
+    <span *ngIf="verificacionCampos && crearItem.invalid">Por favor llene todos los campos</span>
+    <form class="form"  [formGroup]="crearItem" (ngSubmit)="DosFuncionesItem()">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name"  formControlName="nombreitem">
+      <div class="buttons">
+        <button class="btn btn-back"  type="text"  routerLink="/Lista">Volver</button>
+        <button type="submit" class="btn btn-add">Agregar</button>
+      </div>
+    </form>
+  </div>
+</body>

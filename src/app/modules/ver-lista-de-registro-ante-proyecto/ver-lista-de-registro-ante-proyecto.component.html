@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="text-center">
+      <h3 class="h3">Lista de Nuevos  Ante proyecto</h3>
+      <button class="btn btn-add" routerLink="/RegitroAnteproyectos">Agregar Nuevos Anteproyecto</button>
+    </div>
+    <h3 *ngIf="tablaRegistroAnteproyecto.length == 0" style="margin-top: 3px; color: red; text-align: center;">Agrega Anteproyectos 0 datos</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="tablaRegistroAnteproyecto.length > 0">
+      <div class="col" *ngFor="let objectoAnteproyecto of tablaRegistroAnteproyecto">
+        <div class="card h-100 text-center">
+          <label for="">
+            <span>
+              <img src="../../../assets/ItemsImagen.jpg" alt="" width="200px">
+            </span>
+          </label>
+          <label for="">
+            <span> Nombre: {{ objectoAnteproyecto.nombreAnteproyecto }}</span>
+            <br>
+            <span>Descripcion: {{ objectoAnteproyecto.DescripcionAnteproyecto }}</span>
+          </label>
+          <div>
+            <i class="fas fa-edit fa-lg text-info mr-2" [routerLink]="['/editarAnteproyectoRegistrado/', objectoAnteproyecto.id]"></i>
+            <i (click)="borrarAnteproyecto(objectoAnteproyecto.id)" class="fas fa-trash-alt fa-lg text-danger"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

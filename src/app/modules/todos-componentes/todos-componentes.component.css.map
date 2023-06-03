@@ -1,0 +1,1 @@
+{"version":3,"sources":["todos-componentes.component.sass","todos-componentes.component.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EAEA,gEAAA;ACCJ;ADEI;EACI,qBAAA;EACA,SAAA;EACA,UAAA;ACAR;ADCQ;EACI,mBAAA;ACCZ;ADAY;EACI,cAAA;EACA,YAAA;EACA,qBAAA;EACA,WAAA;ACEhB;ADDgB;EACI,sBAAA;ACGpB","file":"todos-componentes.component.css"}

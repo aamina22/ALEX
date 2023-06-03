@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main section.login {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  padding: 1em 2px 0px 3px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgba(218, 213, 213, 0.762342437) 35%, rgb(0, 212, 255) 100%);
+}
+main section.login blockquote {
+  color: white;
+  text-shadow: 2px 2px 3px white, 2px 2px 3px white;
+  font-size: 1.9em;
+  text-align: center;
+  padding-left: 20px;
+}
+main section.login blockquote h2 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+main section.login blockquote p {
+  color: white;
+  font-weight: bold, bold, bold, bold;
+  text-shadow: 2px 2px 3px black;
+  justify-content: left;
+  padding: 10px;
+  font-size: 1.1em;
+}
+main section.login form {
+  height: 310px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+main section.login form input {
+  width: 100%;
+  margin-bottom: 25px;
+}
+main section.login form input {
+  padding: 10px;
+  width: 100%;
+  display: block;
+}
+main section.login form a {
+  padding: 10px;
+  margin: 50px;
+  display: block;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  font-weight: bold;
+}/*# sourceMappingURL=login.component.css.map */

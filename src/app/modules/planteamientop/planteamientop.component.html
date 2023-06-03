@@ -1,0 +1,22 @@
+<body>
+    <div class="proyecto" id="proyecto"></div>
+    <h1 class="titulo">{{TextoRecursivo}}</h1>
+    <span *ngIf="estado && Crearplanteamiento.invalid">Campos en Blancos</span>
+    <form [formGroup]="Crearplanteamiento" (ngSubmit)="DosEstado()">
+        
+        <div class="form-group" id="form-group">
+            <label for="Descripcion" class="form-label">Planteamiento del problema</label>
+            <textarea class="form-control" id="Descripcion" rows="3" formControlName="planteamientoTema"></textarea>
+         </div>
+         <div class="btn-group mt-2">
+            <button *ngIf="TablaDescripcion.length > 0" [disabled]="TablaDescripcion.length ===0" type="submit"  class="btn btn-dark btn-lg">Enviar</button>
+            
+            <a class="btn btn-secondary m-2 p-2 rounded-pill" routerLinkActive="active" [routerLink]="['/Hipotesis']">Guardarlo Borrador</a>
+            
+        </div>
+        
+
+    </form>
+</body>
+
+

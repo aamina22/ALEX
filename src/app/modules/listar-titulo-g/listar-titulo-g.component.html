@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="text-center">
+      <h3 class="h3">Lista Titulo</h3>
+      <button class="btn btn-add" routerLink="/Objectivo">Agregar Nuevo Ojectivo</button>
+    </div>
+    <h3 *ngIf="TablaTituloG.length == 0" style="margin-top: 3px; color: red; text-align: center;">no hay datos</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="TablaTituloG.length > 0">
+      <div class="col" *ngFor="let ObjectoTituloG of TablaTituloG">
+        <div class="card h-100 text-center">
+          <label for="">
+            <span>
+              <img src="../../../assets/ItemsImagen.jpg" alt="" width="200px">
+            </span>
+          </label>
+          <label for="">
+            <span>Titulo: {{ ObjectoTituloG.TituloGTema }}</span>
+          </label>
+          <div>
+            <i class="fas fa-edit fa-lg text-info mr-2" [routerLink]="['/EditarTitulo/', ObjectoTituloG.id]"></i>
+            <i (click)="BorrarTituloG(ObjectoTituloG.id)" class="fas fa-trash-alt fa-lg text-danger"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+

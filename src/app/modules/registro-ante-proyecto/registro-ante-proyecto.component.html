@@ -1,0 +1,16 @@
+<body>
+    <div class="proyecto" id="proyecto"></div>
+    <h1 class="title"> {{Titulorecursivo}}</h1>
+    <span *ngIf="verificacionCampos && crearRegistroAnteProyecto.invalid">Ojo Campos en Blanco</span>
+    <form class="form"  [formGroup]="crearRegistroAnteProyecto" (ngSubmit)="DosFuncionesAnteproyecto()">
+        <div class="form-group" id="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" formControlName="nombreAnteproyecto" placeholder="Nombre Anteproyecto">
+        </div>
+        <div class="form-group" id="form-group">
+            <label for="Descripcion" class="form-label">Descripcion</label>
+            <textarea class="form-control" id="Descripcion" rows="3" formControlName="DescripcionAnteproyecto"></textarea>
+         </div>
+         <button type="submit" class="btn btn-add">Registrar</button>
+    </form>
+</body>

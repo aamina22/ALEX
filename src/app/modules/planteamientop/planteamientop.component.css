@@ -1,0 +1,23 @@
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: rgb(174, 241, 247);
+  background: linear-gradient(90deg, rgb(174, 241, 247) 0%, rgba(208, 194, 194, 0.762342437) 35%, rgb(249, 254, 255) 100%);
+}
+body form {
+  height: -moz-min-content;
+  height: min-content;
+  border: 1px solid #4bb5aa;
+  border-radius: 5px;
+  padding: 20px;
+  width: 370px;
+  background: #ffffff;
+}
+body form .form-group textarea {
+  height: 380px;
+}
+body form div button {
+  background-color: #007bff;
+  color: #fff;
+}/*# sourceMappingURL=planteamientop.component.css.map */

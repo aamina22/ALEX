@@ -1,0 +1,25 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #2980B9;
+  background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+}
+div ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+div ul li {
+  margin-bottom: 10px;
+}
+div ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #333;
+}
+div ul li a:hover {
+  background-color: #ccc;
+}/*# sourceMappingURL=todos-componentes.component.css.map */

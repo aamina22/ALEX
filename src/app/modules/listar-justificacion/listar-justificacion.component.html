@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="text-center">
+      <h3 class="h3">Lista de Jutificacion</h3>
+      <button class="btn btn-add" routerLink="/Listarjustificacion">Agregar Nueva Justificacion</button>
+    </div>
+    <h3 *ngIf="TablaJustificacion.length == 0" style="margin-top: 3px; color: red; text-align: center;">no hay datos</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="TablaJustificacion.length > 0">
+      <div class="col" *ngFor="let objectoJustificacion of TablaJustificacion">
+        <div class="card h-100 text-center">
+          <label for="">
+            <span>
+              <img src="../../../assets/ItemsImagen.jpg" alt="" width="200px">
+            </span>
+          </label>
+          <label for="">
+            <span>Justificacion: {{ objectoJustificacion.JustificacionTema }}</span>
+          </label>
+          <div>
+            <i class="fas fa-edit fa-lg text-info mr-2" [routerLink]="['/Editarjustificacion/', objectoJustificacion.id]"></i>
+            <i (click)="BorrarJustificacion(objectoJustificacion.id)" class="fas fa-trash-alt fa-lg text-danger"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
